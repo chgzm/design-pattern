@@ -9,6 +9,6 @@ public class Singleton {
 
     @Override
     public String toString() {
-        return "Singeton!";
+        return "Singleton!";
     }
 }
