@@ -7,8 +7,8 @@ public class CsvHexDumper {
         CsvParser csvParser = new CsvParser();
         csvParser.parse(filePath);
 
-        for (final List<String> rows : csvParser.getRows()) {
-            for (final String col : rows) {
+        for (final List<String> row : csvParser.getRows()) {
+            for (final String col : row) {
                 System.out.println(StringDumper.hexdump(col));
             }
         }
