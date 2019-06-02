@@ -3,7 +3,7 @@ public class Main {
         // 1. Delegation
         {
             final Charger charger = new Transformer(new Generator());
-            final Power power = charger.get100VPower();
+            final Power100V power = charger.getPower100V();
 
             System.out.println("Delegation:" + power);
         }
@@ -11,7 +11,7 @@ public class Main {
         // 2. Inheritance
         {
             final Charger charger = new LowVoltageGenerator();
-            final Power power = charger.get100VPower();
+            final Power100V power = charger.getPower100V();
 
             System.out.println("Inheritance:" + power);
         }

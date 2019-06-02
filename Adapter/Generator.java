@@ -1,5 +1,5 @@
 public class Generator {
-    public Power getPower() {
-        return new Power();
+    public Power200V getPower200V() {
+        return new Power200V(1000);
     }
 }

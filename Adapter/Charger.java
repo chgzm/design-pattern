@@ -1,3 +1,3 @@
 public interface Charger {
-    Power get100VPower();
+    Power100V getPower100V();
 } 
