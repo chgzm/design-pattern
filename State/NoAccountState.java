@@ -7,11 +7,11 @@ public class NoAccountState implements State {
 
     @Override
     public void login(Context context) {
-        System.out.println("No Account.");
+        System.err.println("No Account.");
     }
 
     @Override
     public void logout(Context context) {
-        System.out.println("No Account.");
+        System.err.println("No Account.");
     }
 }

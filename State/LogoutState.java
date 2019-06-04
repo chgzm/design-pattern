@@ -1,7 +1,7 @@
 public class LogoutState implements State {
     @Override
     public void createAccount(Context context) {
-        System.out.println("Account is already created."); 
+        System.err.println("Account is already created."); 
     }
 
     @Override
@@ -12,6 +12,6 @@ public class LogoutState implements State {
 
     @Override
     public void logout(Context context) {
-        System.out.println("Already logged out.");
+        System.err.println("Already logged out.");
     }
 }

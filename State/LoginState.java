@@ -1,12 +1,12 @@
 public class LoginState implements State {
     @Override
     public void createAccount(Context context) {
-        System.out.println("Account is already created."); 
+        System.err.println("Account is already created."); 
     }
 
     @Override
     public void login(Context context) {
-        System.out.println("Already logged in.");
+        System.err.println("Already logged in.");
     }
 
     @Override
