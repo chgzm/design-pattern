@@ -4,16 +4,24 @@ public class Main {
         {
             final EBook novel      = new EBook(new Novel());
             final EBook nonfiction = new EBook(new Nonfiction());
-            novel.read();
-            nonfiction.read();
+
+            novel.showType();
+            novel.showContent();
+
+            nonfiction.showType();
+            nonfiction.showContent();
         }
 
         // PaperBook
         {
             final PaperBook novel      = new PaperBook(new Novel());
             final PaperBook nonfiction = new PaperBook(new Nonfiction());
-            novel.read();
-            nonfiction.read();
+
+            novel.showType();
+            novel.showContent();
+
+            nonfiction.showType();
+            nonfiction.showContent();
         }
 
     } 

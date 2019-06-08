@@ -1,11 +1,13 @@
-public class Book {
-    protected final BookImpl impl;
+public abstract class Book {
+    private final BookImpl impl;
 
     public Book(BookImpl impl) {
         this.impl = impl;
     }
 
-    public void read() {
-        this.impl.read();
+    public abstract void showType();
+
+    public void showContent() {
+        this.impl.showContent();
     }
 }

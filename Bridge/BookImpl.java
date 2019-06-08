@@ -1,3 +1,3 @@
 public interface BookImpl {
-    void read();
+    void showContent();
 }
