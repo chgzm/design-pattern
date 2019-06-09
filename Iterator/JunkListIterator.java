@@ -1,5 +1,4 @@
 public class JunkListIterator<E> implements Iterator<E> {
-
     private final JunkList<E> junkList;
     private int index;
 
