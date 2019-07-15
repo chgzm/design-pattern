@@ -6,13 +6,13 @@ public class Main {
         }
 
         final String strategyName = args[0];
-        Context context = null;
+        SoccerTeam team = null;
         switch (strategyName) {
-        case "Possession": { context = new Context(new Possession()); break; }
-        case "Counter":    { context = new Context(new Counter());    break; }
+        case "Possession": { team = new SoccerTeam(new Possession()); break; }
+        case "Counter":    { team = new SoccerTeam(new Counter());    break; }
         default:           { System.err.println("Invalid strategy name."); return; }
         }
 
-        context.execute();
+        team.execute();
     }
 }

@@ -21,7 +21,7 @@ public class Pedestrian implements Participant {
         }
     }
 
-    public void pushButton() {
-        this.trafficLight.waiting();
+    public void stopRequest() {
+        this.trafficLight.stopRequested();
     }
 }

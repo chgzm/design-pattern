@@ -10,7 +10,7 @@ public class Main {
         car.proceed();
         pedestrian.proceed();
 
-        pedestrian.pushButton();
+        pedestrian.stopRequest();
 
         car.proceed();
         pedestrian.proceed();

@@ -1,4 +1,4 @@
 public interface TrafficLight {
-    void waiting();
+    void stopRequested();
     void crossed();
 }

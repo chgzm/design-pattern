@@ -11,7 +11,7 @@ public class TrafficLightImpl implements TrafficLight {
     }
 
     @Override
-    public void waiting() {
+    public void stopRequested() {
         if (this.car != null) {
             this.car.setStopFlag(true);
         }
